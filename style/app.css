@@ -211,6 +211,12 @@ footer {
   cursor: pointer;
 }
 
+@media (max-width: 991px) {
+  .navbar .hamburger {
+    display: block;
+  }
+}
+
 .navbar .hamburger span {
   display: block;
   width: 40px;
