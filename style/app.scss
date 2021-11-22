@@ -1,0 +1,13 @@
+/* base */
+@import './base/vars';
+@import './base/reset';
+@import './base/globals';
+
+/* partials*/
+@import './partials/nav';
+@import './partials/header';
+@import './partials/main';
+@import './partials/footer';
+
+/* vendors */
+@import './vendors/fonts';

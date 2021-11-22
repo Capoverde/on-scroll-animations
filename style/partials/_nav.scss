@@ -1,0 +1,57 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+
+    .logo{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid $main-c;
+        background: lighten($body-bg-c,40);
+        overflow: hidden;
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+
+        &--item{
+            margin-left: 20px;
+
+            &-link{
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .hamburger{
+        display: none;
+        width: 40px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+
+        // media queries
+
+        span{
+            display: block;
+            width: 40px;
+            height: 1px;
+            background:$main-c;
+
+            &::after{
+                content: '';
+                position: absolute;
+                top:35%;
+                right:0;
+                width: 30px;
+                height: 1px;
+                background: $main-c;
+            }
+        }
+      
+    }
+}
